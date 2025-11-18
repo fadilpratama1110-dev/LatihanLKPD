@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD 2</title>
+</head>
+<body>
+    <h1>LKPD 2</h1>
+<!-- jelaskan perbedaan if dan else if! Perbedaan utama adalah if mengecek satu kondisi dan akan selalu mengevaluasi
+  kondisinya, sedangkan else if adalah kondisi alternatif yang hanya dievaluasi jika kondisi if sebelumnya tidak terpenuhi.
+   Dengan kata lain, if digunakan untuk menguji satu kemungkinan, sementara else if memungkinkan pengujian beberapa kondisi
+    secara berurutan hingga salah satunya benar. -->
+<!--apa yang terjadi ketika semua kondisi salah? Jika semua kondisi pada if...else if salah, maka program akan mengeksekusi 
+    blok kode di dalam pernyataan else terakhir. Jika tidak ada pernyataan else yang disertakan, program akan melanjutkan ke baris
+    kode berikutnya setelah blok if...else if -->
+ <script>
+    let umur = parseInt(prompt("masukan umur anda"));
+    if (umur < 13 ) {
+        alert("anak Anak");
+    }
+    else if (umur <= 17) {
+        alert("Remaja");
+    }
+    else (umur >= 18) {
+        alert("dewasa");
+
+    }
+
+ </script>       
+</body>
+</html>
