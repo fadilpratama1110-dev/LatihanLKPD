@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Lkpd 6</title>
+</head>
+<body>
+  <!--refleksi-->
+  <!--Apa fungsi document.getElementById()?Fungsi document.getElementById() adalah metode JavaScript
+  yang digunakan untuk menemukan dan mengambil sebuah elemen tunggal dari dokumen HTML berdasarkan atribut id uniknya.
+  Metode ini mengembalikan objek elemen yang ditemukan, atau null jika tidak ada elemen dengan ID yang sesuai.-->
+  <!--Bagaimana cara menambah elemen baru ke halaman?menambah elemen baru ke halaman tergantung pada platform atau aplikasi 
+  yang digunakan. Umumnya, Anda dapat menambahkan elemen dengan menyeretnya dari panel ke halaman, mengklik tombol sisipkan,
+  atau menggunakan perintah seperti push() atau insertBefore() di koding.-->
+
+  <div id="kotak"></div>
+  
+  <button onclick="tambahElement()">tambahElement</button>
+    <script>
+    function tambahElement(){
+      let elementBaru = document.createElement("p");
+      elementBaru.innerHTML = "TAMBAH ELEMENT";
+      document.getElementById ("kotak").appendChild(elementBaru);
+    }
+    </script>
+  
+</body>
+</html>
