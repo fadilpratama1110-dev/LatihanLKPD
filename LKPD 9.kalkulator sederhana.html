@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <!--apa tantangan terbesar membuat projeck ini? di kode nya sama
+    memikirkan untuk membuat projeck nya-->
+    <!--fitur apa yang ingin ditambahkan jika ada waktu lebih? menambahkan array,fot loop,css
+        dan yang lainnya yang saya belum pelajari atau yang saya belum di mengerti-->
+
+<h2>Kalkulator Sederhana</h2>
+
+<input type="number" id="a" placeholder="Angka pertama"><br><br>
+<input type="number" id="b" placeholder="Angka kedua"><br><br>
+
+<button onclick="tambah()">Tambah</button>
+<button onclick="kali()">Kali</button>
+<button onclick="kurang()">kurang</button>
+<button onclick="bagi()">bagi</button>
+<button onclick="reset()">Reset</button>
+
+<p id="hasil"></p>
+
+<script>
+function tambah() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+
+    a += b;          
+    let hasil = a;   
+    document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+}
+
+function kali() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+
+    a *= b;          
+    let hasil = a;   
+    document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+}
+    
+ function kurang() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+
+    a -= b;          
+    let hasil = a;   
+    document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+ }
+    
+ function bagi() {
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+
+    a /= b;          
+    let hasil = a;   
+    document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
+}
+    
+    
+function reset() {
+    document.getElementById("a").value = "";
+    document.getElementById("b").value = "";
+    document.getElementById("hasil").innerHTML = "";
+}
+</script>
+
+</body>
+</html>
